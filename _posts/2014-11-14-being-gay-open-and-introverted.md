@@ -1,5 +1,14 @@
 ---
 title: Being gay, open, and introverted
+tags:
+  - gay
+  - introvert
+  - strangers
+  - public
+  - equal rights
+  - love
+  - intersectionality
+  - open
 ---
 
 This time, I am here to talk to you about myself, or at least some of my intersectionalities 

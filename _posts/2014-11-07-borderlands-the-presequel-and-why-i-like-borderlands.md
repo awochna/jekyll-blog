@@ -1,5 +1,11 @@
 ---
 title: "Borderlands: The Presequel"
+tags:
+  - video game
+  - borderlands
+  - good writing
+  - tiny tina
+  - boyfriend
 ---
 
 So yes, I am here to talk to you about a game. If you've ever played one of
