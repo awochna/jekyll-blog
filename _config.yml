@@ -7,6 +7,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://awochna.com" # the base hostname & protocol for your site
 twitter_username: awochna
 github_username: awochna
+collections:
+  projects:
+    output: true
+    permalink: /project/:path/
 
 # Build settings
 markdown: kramdown
@@ -25,4 +29,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: "Alex Wochna"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
       author: "Alex Wochna"
