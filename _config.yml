@@ -10,6 +10,7 @@ github_username: awochna
 
 # Build settings
 markdown: kramdown
+lsi: true
 
 defaults:
   -
