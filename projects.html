@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: page
+title: Projects
+permalink: /projects/
 ---
 
 <div class="home">
@@ -9,7 +11,7 @@ layout: default
   <ul class="project-list">
     {% for project in site.projects %}
       <li>
-      <span class="project-meta">{{ project.start_date | date: "%b %-d, %Y" }} - {{ (project.end_date | date: "%b %-d, %Y") || "Current" }}</span>
+      <span class="project-meta">{{ project.start_date | date: "%B %Y" }} - {% if project.end_date %}{{ project.end_date | date: "%B %Y" }}{% else %}Current{% endif %}</span>
 
         <h2>
           <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
