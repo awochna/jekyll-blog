@@ -10,7 +10,7 @@ github_username: awochna
 collections:
   projects:
     output: true
-    permalink: /project/:path/
+    permalink: /projects/:path/
 
 # Build settings
 markdown: kramdown

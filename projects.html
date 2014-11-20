@@ -4,19 +4,15 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Projects</h1>
+<div class="projects">
 
   <ul class="project-list">
     {% for project in site.projects %}
       <li>
-      <span class="project-meta">{{ project.start_date | date: "%B %Y" }} - {% if project.end_date %}{{ project.end_date | date: "%B %Y" }}{% else %}Current{% endif %}</span>
-
-        <h2>
+        <h2 class="project-title">
           <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
         </h2>
-        {{ project.excerpt }}
+        <span class="project-meta">{{ project.start_date | date: "%B %Y" }} - {% if project.end_date %}{{ project.end_date | date: "%B %Y" }}{% else %}Current{% endif %}</span>
       </li>
     {% endfor %}
   </ul>

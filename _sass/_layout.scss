@@ -169,7 +169,7 @@
     font-size: 20px;
 }
 
-.post-list {
+.post-list, .project-list {
     margin-left: 0;
     list-style: none;
 
@@ -178,12 +178,16 @@
     }
 }
 
-.post-meta {
+.project-list li h2 {
+  margin-bottom: $spacing-unit / 4;
+}
+
+.post-meta, .project-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
 
-.post-link {
+.post-link, .project-link {
     display: block;
     font-size: 24px;
 }
