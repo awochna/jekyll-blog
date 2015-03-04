@@ -11,12 +11,17 @@
 
     <section class="top-bar-section">
       <ul class="right">
-
+        {% assign blog = true %}
         {% for page in site.pages %}
           {% if page.title %}
-          <li>
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          </li>
+            {% unless blog == false and page.title == "Blog" %}
+              <li>
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </li>
+              {% if page.title == "Blog" %}
+                {% assign blog = false %}
+              {% endif %}
+            {% endunless %}
           {% endif %}
         {% endfor %}
       </ul>

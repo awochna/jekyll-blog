@@ -1,0 +1,52 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>Recent Posts</h1>
+
+<div class="row">
+  <div class="medium-8 columns">
+    <ul class="no-bullet">
+      {% for post in paginator.posts %}
+        <li>
+          <h2>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <aside class="medium-3 medium-offset-1 columns">
+    <h2><a href="/picks">Recent Picks</a></h2>
+    <ul class="no-bullet">
+    {% for pick in site.data.picks limit:3 %}
+      <li>
+        <h3 class="subheader"><a href="{{ pick.url }}">{{ pick.title }} <small>({{ pick.type }})</small></a></h3>
+        <p>{{ pick.description }}</p>
+      </li>
+    {% endfor %}
+  </aside>
+</div>
+
+<div class="row">
+  <ul class="pagination small-offset-2 columns">
+    {% if paginator.previous_page %}
+      <li class="arrow"><a href="{{ paginator.previous_page_path }}">&laquo; Previous</a></li>
+      <li><a href="{{ paginator.previous_page_path }}">{{ paginator.previous_page }}</a></li>
+    {% else %}
+      <li class="arrow unavailable"><a href="">&laquo; Previous</a></li>
+    {% endif %}
+    <li class="current"><a href="">{{ paginator.page }}</a></li>
+    {% if paginator.next_page %}
+      <li><a href="{{ paginator.next_page_path }}">{{ paginator.next_page }}</a></li>
+      <li class="arrow"><a href="{{ paginator.next_page_path }}">Next &raquo;</a>
+    {% else %}
+      <li class="arrow unavailable"><a href="">Next &raquo;</a></li>
+    {% endif %}
+  </ul>
+</div>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

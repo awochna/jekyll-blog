@@ -1,8 +1,8 @@
 # Site settings
-title: Tidy Fox Development
+title: "Tidy Fox Development"
 email: awochna@awochna.com
 description: > # this means to ignore newlines until "baseurl:"
- When neatness and thorough testing counts.
+ When you need tidy web software solutions to complex web problems.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://awochna.com" # the base hostname & protocol for your site
 twitter_username: awochna
@@ -10,11 +10,14 @@ github_username: awochna
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: "/projects/:path/"
 
 # Build settings
 markdown: kramdown
 lsi: true
+exclude: ['Gemfile', 'Gemfile.lock', '.DS_Store']
+paginate: 5
+paginate_path: "/blog/page/:num"
 
 defaults:
   -
