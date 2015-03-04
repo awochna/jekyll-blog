@@ -1,34 +1,24 @@
 ---
 layout: default
 ---
-<div class="project">
+<h1>{{ page.title }}</h1>
+{% if page.start_date %}
+  <p><strong>Started:</strong> {{ page.start_date | date: "%B %Y" }}</p>
+{% endif %}
+{% if page.end_date %}
+  <p><strong>Ended:</strong> {{ page.end_date | date: "%B %Y" }}</p>
+{% endif %}
 
-  <header class="project-header">
-    <h1 class="project-title">{{ page.title }}</h1>
-    {% if page.start_date %}
-      <p class="project-start-date"><strong>Started:</strong> {{ page.start_date | date: "%B %Y" }}</p>
-    {% endif %}
-    {% if page.end_date %}
-      <p class="project-end-date"><strong>Ended:</strong> {{ page.end_date | date: "%B %Y" }}</p>
-    {% endif %}
-  </header>
+{% if page.image.url %}
+  <img src="{{ page.image.url }}" alt="{{ page.image.alt }}" />
+{% endif %}
 
-  {% if page.image.url %}
-    <div class="project-image">
-      <img src="{{ page.image.url }}" alt="{{ page.image.alt }}" />
-    </div>
-  {% endif %}
+{% if page.major_features %}
+  <ul>
+    {% for feature in page.major_features %}
+      <li>{{ feature }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
-  {% if page.major_features %}
-    <ul class="project-major-features">
-      {% for feature in page.major_features %}
-        <li class="project-feature">{{ feature }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  <article class="project-description">
-    {{ content }}
-  </article>
-
-</div>
+{{ content }}

@@ -7,7 +7,8 @@ tags:
   - rant
   - narrative
 ---
-## Short Narrative ##
+The following is a short internal rant about how I feel when I pass the nearby blood drive.
+Feel free to skip over it and completely disregard it.
 
 My day job is near a hospital that I often visit.
 Believe it or not, the cafeteria food there isn't bad and it's closer than a lot of other places.

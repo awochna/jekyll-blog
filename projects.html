@@ -4,19 +4,16 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class="projects">
-  <p>Below are some of my recent projects. Most of them are from my current position at the University of Arizona's Mel and Enid Zuckerman College of Public Health. Additionally, I am an active member of the on-campus web developers at the University of Arizona and you can find other, pet projects that are open source at my GitHub link in the footer.</p>
-  <p>If you need work done, I have a full time job. However, depending on the project details and requirements, we could probably work something out. Just shoot me an email (address also in footer).</p> 
+<p>Below are some of my recent projects. Most of them are from my current position at the University of Arizona's Mel and Enid Zuckerman College of Public Health. Additionally, I am an active member of the on-campus web developers at the University of Arizona and you can find other, pet projects that are open source at my GitHub link in the footer.</p>
+<p>If you need work done, I have a full time job. However, depending on the project details and requirements, we could probably work something out. Just shoot me an email (address also in footer).</p> 
 
-  <ul class="project-list">
-    {% for project in site.projects %}
-      <li>
-        <h2 class="project-title">
-          <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-        </h2>
-        <span class="project-meta">{{ project.start_date | date: "%B %Y" }} - {% if project.end_date %}{{ project.end_date | date: "%B %Y" }}{% else %}Current{% endif %}</span>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+<ul class="no-bullet">
+  {% for project in site.projects %}
+    <li>
+      <h2>
+        <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+      </h2>
+      <span class="meta">{{ project.start_date | date: "%B %Y" }} - {% if project.end_date %}{{ project.end_date | date: "%B %Y" }}{% else %}Current{% endif %}</span>
+    </li>
+  {% endfor %}
+</ul>

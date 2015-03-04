@@ -4,17 +4,13 @@ title: Picks
 permalink: /picks/
 ---
 
-<div class="picks">
-
-  <ul class="pick-list">
-    {% for pick in site.data.picks %}
-      <li>
-        <h2 class="pick-title">
-          <a class="pick-link" href="{{ pick.url }}">{{ pick.title }} ({{ pick.type }})</a>
-        </h2>
-        <p class="pick-description">{{ pick.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+<ul class="no-bullet">
+  {% for pick in site.data.picks %}
+    <li>
+      <h2>
+        <a href="{{ pick.url }}">{{ pick.title }} <small>({{ pick.type }})</small></a>
+      </h2>
+      <p>{{ pick.description }}</p>
+    </li>
+  {% endfor %}
+</ul>

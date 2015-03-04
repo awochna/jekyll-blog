@@ -43,7 +43,33 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+        "normalize",
+        "settings",
+        "foundation"
 ;
+
+// Give "me specific" overrides and styles
+
+footer {
+  background: none repeat scroll 0 0 $oil;
+  color: $iron;
+  a {
+    color: $iron;
+  }
+}
+
+.icon {
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    path {
+      fill: $snow;
+    }
+  }
+}
+
+.meta {
+  color: $steel;
+}
