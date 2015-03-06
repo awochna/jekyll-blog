@@ -5,6 +5,9 @@ end_date: 07/2013
 major_features:
   - Drupal 7
   - Views
+image:
+  url: /assets/cair.png
+  alt: Center for American Indian Resilience screen shot
 ---
 
 This was my first assignment at the Mel and Enid Zuckerman College of Public

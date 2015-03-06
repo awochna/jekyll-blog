@@ -3,10 +3,17 @@ title: Public Health
 start_date: 03/2014
 major_features:
   - Drupal 7
-  - Boost Caching
+  - Boost static asset caching (pages load in 1/3rd the time)
   - Omega 4, bootstrap-sass, compass
   - Migration of almost 2000 nodes
   - Views with entity references
+  - Context aware pieces to help users dig into more information about faculty, research areas, and research projects
+  - Largest site to date
+  - Large set of 'customers' involved and affected, having to balance their requests with each other and the reality of user experience.
+  - One of the first sites to launch with the new UA brand guidelines, helping to shape standards before they were made.
+image:
+  url: /assets/public-health.png
+  alt: Public Health screen shot
 ---
 
 This is one of the major endeavors of my current position at the Mel and Enid
@@ -16,7 +23,7 @@ together with terrible bloat from unnecessary tags and pasting from Word. Some
 built in functions were even built as custom modules.
 
 All the content had to be ported over, including news article archives and old
-research projects. This was done using the feeds and feeds tamper Drupal modules.
+research projects. This was done using the feeds and feeds tamper Drupal modules in a reliable and consisten manner.
 At the same time, the automatic import and controlled tampering with data gave
 a unique opportunity to improve the fundamental objects being imported and
 give them obvious relationships. For instance, a faculty member is clearly

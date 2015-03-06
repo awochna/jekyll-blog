@@ -36,3 +36,18 @@ footer {
 .meta {
   color: $steel;
 }
+
+.dark {
+  background-color: $charcoal;
+  color: $smoke;
+  h1, h2, h3, h4, h5, h6 {
+    color: $white-smoke;
+  }
+  li a {
+    color: $smoke;
+  }
+}
+
+.extra-whitespace {
+  padding: 2rem 0;
+}

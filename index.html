@@ -1,20 +1,90 @@
 ---
-layout: default
+layout: front
 ---
 
-<h1>Recent Posts</h1>
+<div class="dark">
+  <div class="row extra-whitespace">
+    <div class="small-8 small-centered columns text-center">
+      <h1>Tidy Fox Development</h1>
+      <p>Easy software solutions to complex problems. And they don't suck.</p>
+    </div>
+  </div>
+  <div class="row extra-whitespace" data-equalizer>
+    <div class="small-8 columns text-center" data-equalizer-watch>
+      <h2>You have problems that you need software to solve.</h2>
+      <p>They could be automation problems, data problems, you name it!</p>
+      <h2>Want to solve those problems using the Web?</h2>
+      <p>That's where I come in. I can create solutions from simple web sites to robust web applications. Let me show you how.</p>
+    </div>
+    <div class="small-4 columns" data-equalizer-watch>
+      <img alt="Blue fox character; Tidy Fox Development logo" src="{{ "/assets/blue-tidy-fox-standing.png" | prepend: site.baseurl }}" />
+    </div>
+  </div>
+</div>
 
-<ul class="no-bullet">
-  {% for post in site.posts %}
-    <li>
-      <span class="meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="row extra-whitespace">
+  <div class="small-12 columns text-center">
+    <h2>I use the following major tools</h2>
+  </div>
+</div>
 
-      <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<div class="row extra-whitespace">
+  <div class="medium-6 columns text-center">
+    <h3><a href="https://drupal.org/about" target="_blank">Drupal</a></h3>
+    <img src="{{ "/assets/druplicon.png" | prepend: site.baseurl }}" alt="Druplicon, the Drupal logo" />
+    <p>Stable, secure, and extensible. Great for anything from sites to simple web applications.</p>
+  </div>
+  <div class="medium-6 columns text-center">
+    <h3><a href="https://rubyonrails.org" target="_blank">Ruby on Rails</a></h3>
+    <img src="{{ "/assets/rails.png" | prepend: site.baseurl }}" alt="The Ruby on Rails logo" />
+    <p>Painless and extremely customizable. Adept at handling complex or unique web applications.</p>
+  </div>
+</div>
 
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="row extra-whitespace">
+  <div class="small-12 columns text-center">
+    <h3>And I'm not just limited to these. That's where my years of expertise come in: to find the right tools for your solution.</h3>
+  </div>
+</div>
+
+<div class="dark extra-whitespace">
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h2>Take a look at some of my portfolio projects to see if you think we'd be a good fit.</h2>
+    </div>
+  </div>
+  <div class="row extra-whitespace">
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4 text-center">
+      <li>
+        <a href="{{ "/projects/azprc/" | prepend: site.baseurl }}" class="th" role="button" aria-label="Thumbnail">
+          <img src="{{ "/assets/azprc.png" | prepend: site.baseurl }}" alt="Arizona Prevention Research Center" />
+        </a>
+        <a href="{{ "/projects/azprc/" | prepend: site.baseurl }}">Arizona Prevention Research Center</a>
+      </li>
+      <li>
+        <a href="{{ "/projects/public-health/" | prepend: site.baseurl }}" class="th" role="button" aria-label="Thumbnail">
+          <img src="{{ "/assets/public-health.png" | prepend: site.baseurl }}" alt="University of Arizona College of Public Health" />
+        </a>
+        <a href="{{ "/projects/public-health/" | prepend: site.baseurl }}">University of Arizona College of Public Health</a>
+      </li>
+      <li>
+        <a href="{{ "/projects/cair/" | prepend: site.baseurl }}" class="th" role="button" aria-label="Thumbnail">
+          <img src="{{ "/assets/cair.png" | prepend: site.baseurl }}" alt="Center for American Indian Resilience" />
+        </a>
+        <a href="{{ "/projects/cair/" | prepend: site.baseurl }}">Center for American Indian Resilience</a>
+      </li>
+      <li>
+        <a href="{{ "/projects/mwperlc/" | prepend: site.baseurl }}" class="th" role="button" aria-label="Thumbnail">
+          <img src="{{ "/assets/mwperlc.png" | prepend: site.baseurl }}" alt="Mountain West Preparedness & Emergency Response Learning Center" />
+        </a>
+        <a href="{{ "/projects/mwperlc/" | prepend: site.baseurl }}">Mountain West Preparedness &amp; Emergency Response Learning Center</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h2>Gather the details for your project, and then...</h2>
+      <a href="{{ "/contact/" | prepend: site.baseurl }}" class="button large radius">Send me a message!</a>
+    </div>
+  </div>
+</div>

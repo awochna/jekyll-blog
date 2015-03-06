@@ -5,6 +5,12 @@ end_date: 11/2013
 major_features:
   - Drupal 7
   - Views
+  - Front page slide show
+  - Word-like (WYSIWYG) editor
+  - Mobile responsive
+image:
+  url: /assets/azprc.png
+  alt: The Arizona Prevention Research Center screen shot
 ---
 
 One of the first migrations I performed in my current position at the Mel

@@ -10,10 +10,11 @@ layout: default
 {% endif %}
 
 {% if page.image.url %}
-  <img src="{{ page.image.url }}" alt="{{ page.image.alt }}" />
+  <img src="{{ page.image.url | prepend: site.baseurl}}" alt="{{ page.image.alt }}" />
 {% endif %}
 
 {% if page.major_features %}
+  <h2>Major Features</h2>
   <ul>
     {% for feature in page.major_features %}
       <li>{{ feature }}</li>
