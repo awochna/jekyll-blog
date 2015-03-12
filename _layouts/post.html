@@ -9,21 +9,25 @@ layout: default
 
 </article>
 <aside class="medium-3 medium-offset-1 large-4 large-offset-1 columns">
-  <h2>Related/Recent Posts</h2>
-  <ul>
-    {% for post in site.related_posts limit:5 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  <p><a href="{{ "/blog/" | prepend: site.baseurl }}">More posts</a></p>
-  <h2>Recent Picks</h2>
-  <ul>
-    {% for pick in site.data.picks limit:3 %}
-      <li>
-        <h3 class="subheader"><a href="{{ pick.url }}">{{ pick.title }} <small>({{ pick.type }}</small></a></h3>
-        <p>{{ pick.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-  <p><a href="{{ "/picks/" | prepend: site.baseurl }}">More picks</a></p>
+  <div class="extra-padding panel">
+    <h2>Related/Recent Posts</h2>
+    <ul>
+      {% for post in site.related_posts limit:5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ "/blog/" | prepend: site.baseurl }}">More posts</a></p>
+  </div>
+  <div class="panel">
+    <h2>Recent Picks</h2>
+    <ul>
+      {% for pick in site.data.picks limit:3 %}
+        <li>
+          <h3 class="subheader"><a href="{{ pick.url }}">{{ pick.title }} <small>({{ pick.type }}</small></a></h3>
+          <p>{{ pick.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ "/picks/" | prepend: site.baseurl }}">More picks</a></p>
+  </div>
 </aside>
