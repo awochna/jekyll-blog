@@ -13,8 +13,10 @@
 
 // Give "me specific" overrides and styles
 
+$sand: #805C15;
+
 footer {
-  background: none repeat scroll 0 0 $oil;
+  background: none repeat scroll 0 0 $jet;
   color: $iron;
   a {
     color: $iron;
@@ -37,8 +39,7 @@ footer {
   color: $steel;
 }
 
-.dark {
-  background-color: $charcoal;
+%dark-bg {
   color: $smoke;
   h1, h2, h3, h4, h5, h6 {
     color: $white-smoke;
@@ -48,6 +49,25 @@ footer {
   }
 }
 
+.dark-sand-bg {
+  background-color: #553900;
+  @extend %dark-bg;
+}
+
+.dark-star-bg {
+  background-color: #550000;
+  @extend %dark-bg;
+}
+
+.dark-sky-bg {
+  background-color: #003333;
+  @extend %dark-bg;
+}
+
 .extra-whitespace {
   padding: 2rem 0;
+}
+
+.top-bar-section ul li > a.contact.button {
+  background-color: $sand;
 }

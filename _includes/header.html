@@ -13,7 +13,7 @@
       <ul class="right">
         {% for node in site.pages %}
           {% if node.title %}
-            {% unless node.url contains 'page' %}
+            {% unless node.url contains 'page' or node.url contains 'contact' %}
               {% if node.url == page.url %}
                 <li class="active">
               {% else %}
@@ -24,6 +24,9 @@
             {% endunless %}
           {% endif %}
         {% endfor %}
+        <li class="has-form">
+          <a class="button contact radius" href="{{ "/contact/" | prepend: site.baseurl }}">Contact</a>
+        </li>
       </ul>
     </section>
 
