@@ -23,7 +23,7 @@ layout: default
     <ul>
       {% for pick in site.data.picks limit:3 %}
         <li>
-          <h3 class="subheader"><a href="{{ pick.url }}">{{ pick.title }} <small>({{ pick.type }}</small></a></h3>
+          <h3 class="subheader"><a href="{{ pick.url }}">{{ pick.title }} <small>({{ pick.type }})</small></a></h3>
           <p>{{ pick.description }}</p>
         </li>
       {% endfor %}
