@@ -4,12 +4,14 @@ start_date: 03/2014
 major_features:
   - Drupal 7
   - Boost static asset caching (pages load in 1/3rd the time)
-  - Omega 4, bootstrap-sass, compass
-  - Migration of almost 2000 nodes
-  - Views with entity references
+  - Omega 4, bootstrap-sass, and compass made theming robust and easy
+  - Migration of almost 2000 nodes (pages and other content)
+  - Views with entity references connect related content in ways that can be exposed to visitors
   - Context aware pieces to help users dig into more information about faculty, research areas, and research projects
   - Largest site to date
   - Large set of 'customers' involved and affected, having to balance their requests with each other and the reality of user experience.
+  - Word-like (WYSIWYG) editor
+  - Mobile responsive
   - One of the first sites to launch with the new UA brand guidelines, helping to shape standards before they were made.
 image:
   url: /assets/public-health.png

@@ -4,8 +4,8 @@ start_date: 09/2013
 end_date: 11/2013
 major_features:
   - Drupal 7
-  - Views
-  - Front page slide show
+  - Views to aggregate content together in a visually nice way
+  - Front page slide show of content
   - Word-like (WYSIWYG) editor
   - Mobile responsive
 image:

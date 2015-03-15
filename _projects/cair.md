@@ -4,7 +4,11 @@ start_date: 05/2013
 end_date: 07/2013
 major_features:
   - Drupal 7
-  - Views
+  - Views for agreggating and displaying content in nice ways
+  - Slide show of images related to content
+  - Word-like (WYSIWYG) editor
+  - Training for the site owners so they can update the content they need as quickly as they want, but spport for the more difficult updates
+  - Mobile responsive
 image:
   url: /assets/cair.png
   alt: Center for American Indian Resilience screen shot

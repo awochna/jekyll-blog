@@ -4,9 +4,10 @@ start_date: 01/2014
 end_date: 03/2014
 major_features:
   - Drupal 7
-  - SCSS with Bootstrap 3
-  - Agile-like development methodology with high levels of customer involvement
-  - Custom hacks to make the horizontal accordion play nicely and a custom fallback for mobile devices
+  - SCSS with Bootstrap 3 made theming easy using Bootstrap's pre-built, nestable grid system
+  - Agile-like development methodology with high levels of customer involvement, and a short feedback cycle, losing less time to backtracking
+  - Custom coding to make the horizontal accordion play nicely and a custom fallback for mobile devices
+  - Mobile responsive
 image:
   url: /assets/mwperlc.png
   alt: Mountain West Preparedness & Emeprgency Response Learning Center screen shot
