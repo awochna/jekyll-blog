@@ -41,6 +41,12 @@ permalink: /about/
     <p class="text-center">
       <a href="{{ "/contact/" | prepend: site.baseurl }}" class="radius button">Contact Me</a>
     </p>
+    <h3>Recent Blog Posts</h3>
+    <ul>
+    {% for post in site.posts limit:3 %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
   </div>
 </div>
 
