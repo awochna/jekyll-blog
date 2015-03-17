@@ -1,5 +1,6 @@
 ---
 title: Public Health
+order: 96
 start_date: 03/2014
 major_features:
   - Drupal 7

@@ -1,5 +1,6 @@
 ---
 title: Center for American Indian Resilience
+order: 98
 start_date: 05/2013
 end_date: 07/2013
 major_features:
