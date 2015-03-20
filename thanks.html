@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<h1>Thanks!</h1>
+<p> Thank you for contacting me. I should get back to you within 48 hours. In the mean time, would you like to browse my portfolio or blog?</p>
+
+<div class="row">
+  <div class="medium-6 columns">
+    <div class="panel">
+      <h2>Portfolio Projects</h2>
+      {% for project in site.projects reversed | sort: 'order' %}
+      <div class="row extra-whitespace">
+        <div class="small-6 columns">
+          <a class="th" href="{{ project.url | prepend: site.baseurl }}">
+            <img src="{{ project.image.url | prepend: site.baseurl }}" alt="{{ project.image.alt }}" />
+          </a>
+        </div>
+        <div class="small-6 columns">
+          <p><strong><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></strong></p>
+          <span class="meta">{{ project.start_date | date: "%B %Y" }} - {% if project.end_date %}{{ project.end_date | date: "%B %Y" }}{% else %}Current{% endif %}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="medium-6 columns">
+    <div class="panel">
+      <h2>Recent Blog Posts</h2>
+        {% for post in site.posts limit:3 %}
+        <div class="extra-whitespace">
+          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <small>{{ post.date | date: "%D" }}</small></h3>
+          {{ post.excerpt }}
+        </div>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
