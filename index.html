@@ -2,7 +2,7 @@
 layout: front
 ---
 
-<div class="dark-sky-bg">
+<div class="dark-sky-bg front-section">
   <div class="row extra-whitespace">
     <div class="small-12 columns text-center">
       <h1>Use web software solutions to solve complex problems.</h1>
@@ -21,39 +21,41 @@ layout: front
   </div>
 </div>
 
-<div class="row extra-whitespace">
-  <div class="small-12 columns text-center">
-    <h2>I use the following major tools</h2>
+<div class="front-section">
+  <div class="row extra-whitespace">
+    <div class="small-12 columns text-center">
+      <h2>I use the following major tools</h2>
+    </div>
+  </div>
+
+  <div class="row extra-whitespace">
+    <div class="medium-6 columns text-center">
+      <h3><a href="https://drupal.org/about" target="_blank">Drupal</a></h3>
+      <img class="extra-whitespace" src="{{ "/assets/druplicon.png" | prepend: site.baseurl }}" alt="Druplicon, the Drupal logo" />
+      <p>Stable, secure, and extensible. Great for anything from sites to simple web applications.</p>
+    </div>
+    <div class="medium-6 columns text-center">
+      <h3><a href="https://rubyonrails.org" target="_blank">Ruby on Rails</a></h3>
+      <img class="extra-whitespace" src="{{ "/assets/rails.png" | prepend: site.baseurl }}" alt="The Ruby on Rails logo" />
+      <p>Painless and extremely customizable. Adept at handling complex or unique web applications.</p>
+    </div>
+  </div>
+
+  <div class="row extra-whitespace">
+    <div class="small-12 columns text-center">
+      <h3>And I'm not just limited to these. That's where my years of expertise come in: to find the right tools for your solution.</h3>
+    </div>
   </div>
 </div>
 
-<div class="row extra-whitespace">
-  <div class="medium-6 columns text-center">
-    <h3><a href="https://drupal.org/about" target="_blank">Drupal</a></h3>
-    <img src="{{ "/assets/druplicon.png" | prepend: site.baseurl }}" alt="Druplicon, the Drupal logo" />
-    <p>Stable, secure, and extensible. Great for anything from sites to simple web applications.</p>
-  </div>
-  <div class="medium-6 columns text-center">
-    <h3><a href="https://rubyonrails.org" target="_blank">Ruby on Rails</a></h3>
-    <img src="{{ "/assets/rails.png" | prepend: site.baseurl }}" alt="The Ruby on Rails logo" />
-    <p>Painless and extremely customizable. Adept at handling complex or unique web applications.</p>
-  </div>
-</div>
-
-<div class="row extra-whitespace">
-  <div class="small-12 columns text-center">
-    <h3>And I'm not just limited to these. That's where my years of expertise come in: to find the right tools for your solution.</h3>
-  </div>
-</div>
-
-<div class="dark-star-bg extra-whitespace">
-  <div class="row">
+<div class="dark-star-bg front-section">
+  <div class="row extra-whitespace">
     <div class="small-12 columns text-center">
       <h2>Take a look at some of my portfolio projects to see if you think we'd be a good fit.</h2>
     </div>
   </div>
   <div class="row extra-whitespace">
-    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4 text-center">
+    <ul class="small-block-grid-1 medium-block-grid-2 text-center">
       <li>
         <a href="{{ "/projects/azprc/" | prepend: site.baseurl }}" class="th" role="button" aria-label="Thumbnail">
           <img src="{{ "/assets/azprc.png" | prepend: site.baseurl }}" alt="Arizona Prevention Research Center" />
@@ -80,7 +82,7 @@ layout: front
       </li>
     </ul>
   </div>
-  <div class="row">
+  <div class="row extra-whitespace">
     <div class="small-12 columns text-center">
       <h2>Gather the details for your project, and then...</h2>
       <a href="{{ "/contact/" | prepend: site.baseurl }}" class="button large radius">Send me a message!</a>

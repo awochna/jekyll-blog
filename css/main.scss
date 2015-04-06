@@ -40,6 +40,7 @@ footer {
 
 %dark-bg {
   color: $smoke;
+  background-color: $oil;
   h1, h2, h3, h4, h5, h6 {
     color: $white-smoke;
   }
@@ -49,18 +50,22 @@ footer {
 }
 
 .dark-sand-bg {
-  background-color: #553900;
   @extend %dark-bg;
 }
 
 .dark-star-bg {
-  background-color: #550000;
   @extend %dark-bg;
 }
 
 .dark-sky-bg {
-  background-color: #003333;
   @extend %dark-bg;
+  padding: 5rem 0;
+}
+
+.front-section {
+  .row {
+    padding: 3rem 0;
+  }
 }
 
 .extra-whitespace {
