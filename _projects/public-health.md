@@ -2,6 +2,7 @@
 title: Public Health
 order: 96
 start_date: 03/2014
+end_date: 10/2014
 major_features:
   - Drupal 7
   - Boost static asset caching (pages load in 1/3rd the time)
@@ -26,7 +27,8 @@ together with terrible bloat from unnecessary tags and pasting from Word. Some
 built in functions were even built as custom modules.
 
 All the content had to be ported over, including news article archives and old
-research projects. This was done using the feeds and feeds tamper Drupal modules in a reliable and consisten manner.
+research projects.
+This was done using the feeds and feeds tamper Drupal modules in a reliable and consistent manner.
 At the same time, the automatic import and controlled tampering with data gave
 a unique opportunity to improve the fundamental objects being imported and
 give them obvious relationships. For instance, a faculty member is clearly
@@ -37,7 +39,3 @@ the different node templates using Panels. This required some advanced views
 configuration that I did not understand prior to the start of the project.
 This would be only one of a number of things I learned during the development
 of this site.
-
-I have not put an end date on this project yet because, although it is live,
-there are still things we want to improve upon. The primary rounds of
-development, however, ended in October 2014.
