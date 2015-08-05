@@ -27,7 +27,4 @@ Yum will look for the data in the right place next time you try to run `sudo yum
 For more information, check out the [RHEL documentation on the yum cache](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/sec-Working_with_Yum_Cache.html)
 Hope this helps you.
 
-<div class='panel'>
-I'm trying to do better at logging some of the 'not so obvious' roadblocks I come across in development in hopes of helping people who might get stuck on them.
-I know the internet is one of my best resources when I get stuck on things and I'm always really grateful to the people who make short blog posts about those problems.
-</div>
+{% include dev-panel.html %}
