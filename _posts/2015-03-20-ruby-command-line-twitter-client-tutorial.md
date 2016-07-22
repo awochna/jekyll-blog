@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Ruby comand line twitter client"
+title: "Tutorial: Ruby command line twitter client"
 tags:
   - ruby
   - technical
